@@ -8,7 +8,12 @@ module.exports = {
     fontFamily: {
       sans: ['Manrope', 'sans-serif']
     },
-    extend: {},
+    extend: {
+
+      backgroundImage:{
+        blur: "url('/blur-mobile.png')",
+      },
+    },
   },
   plugins: [],
 }

@@ -47,14 +47,10 @@ function App() {
       </header>
 
       <main className={`${open ? 'hidden' : ''} ${open ? 'md:block' : ''}`}>
-        <div className="md:hidden">
-          <img src="./blur-mobile.png" alt="" className="w-full absolute -bottom-10"/>
-        </div>
-        <div className="flex flex-col items-center md:text-7xl text-[50px] mt-[98px]">
+        <div className="flex flex-col items-center font-semibold md:text-7xl text-[50px] mt-[98px] bg-blur bg-cover bg-no-repeat bg-center md:bg-none">
           <p className="text-white">Great Coffee</p>
-          <p className="text-white">Great Code</p>
+          <span className="text-[#8257E5]">&lt;Great Code/&gt;</span>
           <img src="./rocket-coffee.png" alt="" className="mt-[25px]" />
-          
         </div>
        
         
