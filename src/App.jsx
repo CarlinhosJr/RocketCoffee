@@ -20,7 +20,7 @@ function App() {
             <div className='md:flex justify-around py-4 md:px-10 px-7'>
                 <div className='cursor-pointer'>
                       <span className='mr-1 pt-2'>
-                          <img src="./public/logo-mobile.svg" alt="" />
+                          <img src="./logo-mobile.svg" alt="" />
                       </span>
                   </div>
                   <div 
@@ -41,12 +41,12 @@ function App() {
                       <p className='text-white text-3xl font-medium text-center'>O café que fará seu código decolar para o próximo nivel</p>
                   </div>
                   <div className="text-center">
-                      <button className={`md:ml-8 text-white border-2 border-purple-700 rounded-lg py-2 px-6 ${open ? 'hidden': 'mt-20 md:mt-0 md:ml-0'} md:${open ? 'block' : ''}`}>PEGAR MEU CAFÉ</button>
+                      <button className={`md:ml-8 text-white border-2 border-purple-700 rounded-lg py-2 px-6 ${open ? 'hidden': 'mt-20 md:mt-0 md:ml-0'} ${open ? 'md:block' : ''}`}>PEGAR MEU CAFÉ</button>
                   </div>
               </div>
       </header>
 
-      <main className={`${open ? 'hidden' : ''} md:${open ? 'block' : ''}`}>
+      <main className={`${open ? 'hidden' : ''} ${open ? 'md:block' : ''}`}>
         <div className="md:hidden">
           <img src="./blur-mobile.png" alt="" className="w-full absolute -bottom-10"/>
         </div>
