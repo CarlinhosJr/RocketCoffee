@@ -31,7 +31,7 @@ function App() {
                   <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-2 transition-all duration-500 ease-in ${open ? 'top-20 ':'hidden'}`}>
                       {
                       Links.map((link)=>(
-                          <li key={link.name} className='md:ml-8 md:my-0 my-7 border-b border-zinc-400 pb-4 pl-2 md:border-none '>
+                          <li key={link.name} className='md:ml-8 md:my-0 my-7 border-b border-zinc-400/60 pb-4 pl-2 md:border-none '>
                               <a href={link.link} className='text-white hover:text-gray-400 duration-500'>{link.name}</a>
                           </li>
                       ))
@@ -41,14 +41,14 @@ function App() {
                       <p className='text-white text-3xl font-medium text-center'>O café que fará seu código decolar para o próximo nivel</p>
                   </div>
                   <div className="text-center">
-                      <button className={`md:ml-8 text-white border-2 border-purple-700 rounded-lg py-2 px-6 ${open ? 'hidden': 'mt-20 md:mt-0 md:ml-0'}`}>PEGAR MEU CAFÉ</button>
+                      <button className={`md:ml-8 text-white border-2 border-purple-700 rounded-lg py-2 px-6 ${open ? 'hidden': 'mt-20 md:mt-0 md:ml-0'} md:${open ? 'block' : ''}`}>PEGAR MEU CAFÉ</button>
                   </div>
               </div>
       </header>
 
-      <main className={`${open ? 'hidden' : ''}`}>
+      <main className={`${open ? 'hidden' : ''} md:${open ? 'block' : ''}`}>
         <div className="md:hidden">
-          <img src="./blur-mobile.png" alt="" className="w-full fixed -bottom-10"/>
+          <img src="./blur-mobile.png" alt="" className="w-full absolute -bottom-10"/>
         </div>
         <div className="flex flex-col items-center md:text-7xl text-[50px] mt-[98px]">
           <p className="text-white">Great Coffee</p>
