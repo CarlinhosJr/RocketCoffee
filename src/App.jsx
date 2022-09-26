@@ -44,7 +44,7 @@ function App() {
                   </div>
                     <Dialog.Root>
                     <div className='text-center'> 
-                      <Dialog.Trigger className={`md:ml-8 text-white border-2 border-purple-700 rounded-lg py-2 px-6 ${open ? 'hidden': 'mt-20 md:mt-0 md:ml-0'} ${open ? 'md:block' : ''}`}>
+                      <Dialog.Trigger className={`md:ml-8 text-white border-2 border-purple-700 rounded-lg py-2 px-6 ${open ? 'hidden md:block': 'mt-20 md:mt-0 md:ml-0'}`}>
                         PEGAR MEU CAFÉ
                       </Dialog.Trigger>
                     </div>
