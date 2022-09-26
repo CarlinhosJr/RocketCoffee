@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import * as Dialog from '@radix-ui/react-dialog'
+import React, { useState } from 'react'
+import { ModalGetCoffee } from './components/ModalGetCoffee'
 import './main.css'
 
 function App() {
@@ -40,16 +42,22 @@ function App() {
                   <div className={`mt-28 md:hidden ${open ? 'hidden':''}`}>
                       <p className='text-white text-3xl font-medium text-center'>O café que fará seu código decolar para o próximo nivel</p>
                   </div>
-                  <div className="text-center">
-                      <button className={`md:ml-8 text-white border-2 border-purple-700 rounded-lg py-2 px-6 ${open ? 'hidden': 'mt-20 md:mt-0 md:ml-0'} ${open ? 'md:block' : ''}`}>PEGAR MEU CAFÉ</button>
-                  </div>
+                    <Dialog.Root>
+                    <div className='text-center'> 
+                      <Dialog.Trigger className={`md:ml-8 text-white border-2 border-purple-700 rounded-lg py-2 px-6 ${open ? 'hidden': 'mt-20 md:mt-0 md:ml-0'} ${open ? 'md:block' : ''}`}>
+                        PEGAR MEU CAFÉ
+                      </Dialog.Trigger>
+                    </div>
+                      <ModalGetCoffee></ModalGetCoffee>
+                    </Dialog.Root>  
+                  
               </div>
       </header>
 
       <main className={`${open ? 'hidden' : ''} ${open ? 'md:block' : ''}`}>
         <div className="flex flex-col items-center font-semibold md:text-7xl text-[50px] mt-[98px] bg-blur bg-cover bg-no-repeat bg-center md:bg-none">
           <p className="text-white">Great Coffee</p>
-          <span className="text-[#8257E5]">&lt;Great Code/&gt;</span>
+          <span className="text-[#8257E5] shadow-black">&lt;Great Code/&gt;</span>
           <img src="./rocket-coffee.png" alt="" className="mt-[25px]" />
         </div>
        

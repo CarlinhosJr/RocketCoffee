@@ -4,6 +4,7 @@ module.exports = {
     './src/**/*.jsx',
     './index.html',
   ],
+
   theme: {
     fontFamily: {
       sans: ['Manrope', 'sans-serif']

@@ -49,3 +49,21 @@ const Navegation = () =>{
 }
 
 export default Navegation*/ 
+
+
+export default function ModalGetCoffee() {
+    const [open, setOpen] = React.useState(false);
+    const theme = useTheme();
+    const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+  
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+
+
+    
+    
