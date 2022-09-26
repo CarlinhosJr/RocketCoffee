@@ -5,11 +5,12 @@
   "homepage": "http://Graziosi.github.io/RocketCoffee", 
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
+
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
