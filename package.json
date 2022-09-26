@@ -2,6 +2,7 @@
   "name": "rocketcoffee",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://Graziosi.github.io/RocketCoffee", 
   "type": "module",
   "scripts": {
     "dev": "vite",
