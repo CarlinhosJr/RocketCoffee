@@ -2,7 +2,7 @@
   "name": "rocketcoffee",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://Graziosi.github.io/RocketCoffee", 
+  "homepage": "http://Graziosi.github.io/RocketCoffee",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
@@ -10,7 +10,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
