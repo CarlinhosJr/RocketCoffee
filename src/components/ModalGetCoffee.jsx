@@ -2,6 +2,8 @@ import * as Dialog from '@radix-ui/react-dialog'
 
 
 export function ModalGetCoffee(){
+  const nameOptions = ['Café Expresso', 'Café com leite', 'Cappuccino', 'Macchiato', 'Café late', 'Mocha', 'Café com Chantilly']
+
     return(
         <Dialog.Portal>
             <Dialog.Overlay className="bg-black/40 inset-0 fixed"/>
@@ -15,27 +17,12 @@ export function ModalGetCoffee(){
                           <option value="" disabled>
                             Selecione seu café favorito
                           </option>
-                          <option value="cafe expresso">
-                            Café Expresso
-                          </option>
-                          <option value="cafe com leite">
-                            Café com leite
-                          </option>
-                          <option value="cappuccino">
-                            Cappuccino
-                          </option>
-                          <option value="macchiato">
-                            Macchiato
-                          </option>
-                          <option value="cafe late">
-                            Café late
-                          </option>
-                          <option value="mocha">
-                            Mocha
-                          </option>
-                          <option value="cafe com chantilly">
-                            Café com Chantilly
-                          </option>
+                          {
+                            nameOptions.map((option) => {
+                            return <option key={option} value=''>{option}</option>
+
+                            })}
+
                         </select>
                       </div>
                     </div>
